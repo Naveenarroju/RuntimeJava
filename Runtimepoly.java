@@ -12,7 +12,7 @@
 class Hollywood extends Movie			//5.subclass of class Movie 
 {
 	public void holly(){				//here the holly method in Hollywood subclass is "overridding"	holly method in superclass Movie
-	System.out.println("	Wonder Woman");
+	
 	}
 }
 
