@@ -7,12 +7,16 @@
 	public void bolly(){				//super class method 2
 	System.out.print("Enter the Bollywood movie name:");
 	}
+
+	public void collection(){
+	
+	}
 }
 
 class Hollywood extends Movie			//5.subclass of class Movie 
 {
 	public void holly(){				//here the holly method in Hollywood subclass is "overridding"	holly method in superclass Movie
-	
+	System.out.println(" Wonder woman");
 	}
 }
 
@@ -21,7 +25,13 @@ class Hollywood extends Movie			//5.subclass of class Movie
 	public void bolly(){			//here the bolly method in Bollywood subclass is "overridding" bolly method in superclass Movie
 	System.out.println("	Raabta");
 	}
+	
+	public void collection(){
+	int add = 10 + 20;
+	System.out.println("collection of the movies is:"+add); 
+	}
 }
+
 public class Runtimepoly  //9.class which has main method 
 {
 	static {			//1.static block which need not be called 
@@ -38,5 +48,7 @@ public class Runtimepoly  //9.class which has main method
 		M.holly(); m1.holly(); //8.As the two classs have the same method compiler can't decide which method to call while compile time 
 
 		M.bolly(); m2.bolly(); //10.so JVM decides which method to call at runtime hence it is called runtime or dynamic polymorphism.
+
+       	 m2.collection();
 	}
 }	
