@@ -28,7 +28,8 @@ class Hollywood extends Movie			//5.subclass of class Movie
 	
 	public void collection(){
 	int add = 10 + 20;
-	System.out.println("collection of the movies is:"+add); 
+	System.out.println("collection of the movies is:"+add);
+	System.out.println("New line added");
 	}
 }
 
